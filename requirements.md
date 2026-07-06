@@ -23,12 +23,15 @@
     - Phone: 615-569-1679
     - Instagram: @Brentwooddirtworks
     - Facebook: Brentwood Dirt Works
-    - Services: Demolition, Excavation, Grading, French Drains, Waterproofing, Land Clearing, Tree Removal, Stump Grinding
-    - Website URL: still needed
+    - Services (from truck signage):
+      - Commercial: Demolition, Excavation, Grading, Utilities
+      - Residential: French Drains, Waterproofing, Sump Pumps, Grading, Land Clearing, Utilities, Hardscape, Landscape, Tree Removal, Stump Grinding
+    - Website URL: still needed — truck signage only shows a QR code + Instagram/Facebook, no visible standalone site
   - Referral partnership — overlapping services, send each other jobs
 
 ## Google Setup
 - Tony creating a new Google account (offered to create it for him — confirmed yes)
+- Plain @gmail.com address is fine — a Google Business Profile does not require Google Workspace or a custom-domain email, so a standard gmail.com account works for setup
 - Google Business Profile needed (shows up on Maps/Search)
 - Info still needed to complete profile:
   - Final business name
