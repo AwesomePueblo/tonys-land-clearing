@@ -230,7 +230,7 @@ a:hover {
 .hero {
   background:
     linear-gradient(160deg, rgba(0,0,0,0.72) 0%, rgba(11,15,20,0.85) 100%),
-    url('https://images.unsplash.com/photo-1601758064133-2ec9f97a1d2b?w=1400&q=80') center/cover no-repeat;
+    url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&q=80') center/cover no-repeat;
   border-radius: var(--border-radius);
   padding: 5rem 3rem;
   margin-bottom: 3rem;
@@ -530,6 +530,65 @@ a:hover {
 .form-success h3 { font-family: var(--font-display); font-size: 1.4rem; margin-bottom: 0.5rem; }
 .form-success p, .form-error p { color: var(--text-muted); font-size: 0.95rem; }
 .honeypot-field { position: absolute; left: -9999px; }
+
+/* Feature image band */
+.feature-band {
+  position: relative;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  min-height: 320px;
+  display: flex;
+  align-items: flex-end;
+  background: linear-gradient(180deg, rgba(11,15,20,0.1) 0%, rgba(11,15,20,0.92) 90%),
+    url('https://images.unsplash.com/photo-1470770903676-69b98201ea1c?w=1600&q=80') center/cover no-repeat;
+  border: 1px solid var(--border-color);
+  padding: 2.5rem;
+}
+.feature-band-content { max-width: 560px; }
+.feature-band h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+.feature-band p { color: rgba(255,255,255,0.82); font-size: 1rem; margin: 0; }
+
+/* Photo + text split */
+.split-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+@media (max-width: 760px) {
+  .split-block { grid-template-columns: 1fr; }
+}
+.split-photo {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  aspect-ratio: 4/3;
+  background-size: cover;
+  background-position: center;
+}
+.split-text h3 {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+}
+.split-text p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.75rem; }
+.split-note {
+  display: inline-block;
+  font-size: 0.78rem;
+  color: var(--amber-light);
+  background: rgba(245,127,23,0.08);
+  border: 1px solid rgba(255,179,0,0.2);
+  border-radius: 999px;
+  padding: 0.3rem 0.85rem;
+}
 
 /* Partners */
 .partner-card {
