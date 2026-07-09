@@ -44,6 +44,8 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header-height) + 1rem);
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -688,6 +690,11 @@ a:hover {
 @media (max-width: 640px) {
   .hero { padding: 3.5rem 1.5rem; }
   .main-content { padding: 1.5rem 1.25rem 0; }
+}
+@media (max-width: 480px) {
+  .site-logo { font-size: 1.1rem; }
+  .header-cta { gap: 0.5rem; }
+  .header-cta .btn-green { display: none; }
 }
 
 /* Chat widget */
