@@ -88,9 +88,12 @@ A: No, this is normal wood decomposition. Harmless in almost all cases; remove m
 ## Business Info
 Phone: 620-617-1838. Service area: Brentwood, Franklin, and Middle Tennessee. Hours: Mon-Fri 7am-6pm. Tagline: "No stump too tough!"`;
 
+const { getStore } = require('@netlify/blobs');
+
 const MODEL = 'claude-haiku-4-5-20251001';
 const MAX_TOKENS = 300;
 const MAX_HISTORY_MESSAGES = 12; // ~6 user turns, matches the 5-question UI limit plus a little headroom
+const DAILY_LIMIT_PER_IP = 20;
 
 exports.handler = async (event) => {
   if (event.httpMethod !== 'POST') {
@@ -103,6 +106,24 @@ exports.handler = async (event) => {
       statusCode: 500,
       body: JSON.stringify({ error: 'Chat is not configured yet. Please call 620-617-1838.' }),
     };
+  }
+
+  const ip = event.headers['x-nf-client-connection-ip'] || event.headers['client-ip'] || 'unknown';
+  const today = new Date().toISOString().slice(0, 10);
+  const rateLimitKey = `${ip}-${today}`;
+
+  try {
+    const store = getStore('chat-rate-limit');
+    const current = parseInt((await store.get(rateLimitKey)) || '0', 10);
+    if (current >= DAILY_LIMIT_PER_IP) {
+      return {
+        statusCode: 429,
+        body: JSON.stringify({ error: "We've hit today's chat limit — call 620-617-1838 for help." }),
+      };
+    }
+    await store.set(rateLimitKey, String(current + 1));
+  } catch (e) {
+    // If Blobs is unavailable for some reason, fail open rather than break the whole feature
   }
 
   let payload;
