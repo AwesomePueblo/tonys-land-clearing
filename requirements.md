@@ -4,7 +4,7 @@
 - **Current brand:** Tony's Stump Grinding (existing social media presence)
 - **New website brand:** Tony's Land Clearing (intentionally broader — confirmed direction)
 - **Domain:** tonyslandclearing.com ✅ (purchased on GoDaddy)
-- **Business email:** tony@tonyslandclearing.com (to be set up)
+- **Business email:** Ellis_tbone@yahoo.com ✅ (Tony's existing personal email — decided not to set up a domain-matching email; a plain Gmail account will be used separately for the Google Business Profile)
 - **Phone:** 620-617-1838 ✅
 - **Tagline:** "No stump too tough!" ✅ — use this on the site
 - **Services:** Stump grinding, land clearing, residential & commercial
