@@ -61,7 +61,7 @@ A: Not necessarily, as long as there's access to the stump and any special notes
 
 ## Pricing & Booking
 Q: How is pricing calculated?
-A: Stump grinding: Small (up to 12") $95 flat. Medium (12"-24") $145 flat. Large (24"+) $6 per inch, call for a quote. Land clearing and tree removal are priced per project after a free on-site assessment. Pricing is subject to final confirmation — call 620-617-1838 to confirm current pricing.
+A: We don't publish fixed pricing. Cost depends on stump size and count, access, root exposure, and overall scope of work. Every job gets a free on-site estimate — fill out the quote form on the website (a photo helps) or call 620-617-1838 for an accurate quote.
 
 Q: Do you offer free estimates?
 A: Yes, free on-site estimates for larger or complex jobs. Photos can also be sent through the website's quote form for a phone quote.
