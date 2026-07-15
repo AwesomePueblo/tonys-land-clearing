@@ -86,7 +86,7 @@ Q: There's a mushroom or fungus growing where the stump was — should I be worr
 A: No, this is normal wood decomposition. Harmless in almost all cases; remove mushroom caps promptly if pets or small children are around.
 
 ## Business Info
-Phone: 620-617-1838. Service area: Brentwood, Franklin, and Middle Tennessee. Hours: Mon-Fri 7am-6pm. Tagline: "No stump too tough!"`;
+Phone: 620-617-1838. Service area: Brentwood, Franklin, and Middle Tennessee. Tagline: "No stump too tough!"`;
 
 const { getStore } = require('@netlify/blobs');
 

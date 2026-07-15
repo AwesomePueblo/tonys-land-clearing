@@ -11,16 +11,16 @@
 - **Service area:** Middle Tennessee ✅ — focus on Brentwood and Franklin (affluent Nashville suburbs)
 
 ## Website
-- Standalone site separate from banquotas.com ✅ live at tonyslandclearing.com (DNS still propagating)
+- Standalone site separate from banquotas.com ✅ live at tonyslandclearing.com (DNS resolved, SSL provisioned)
 - Hosting: GitHub → Netlify (recommended over GitHub Pages for native form handling) ✅
 - Booking calendar replaced with a quote request form ✅ (name, phone, address, service type, photo upload, notes) — Netlify Forms, no fixed pricing shown
 - **Pricing policy: no published pricing anywhere on the site** ✅ — Tony wants free estimate via the quote form (or a phone call) as the only path to a price, not published rate tables. Removed the pricing section, the FAQ's dollar-figure answer, and the chatbot's pricing figures accordingly.
 - Real logo received from Tony ("Tony's Land Clearing" version) and in use in the site header ✅
+- **Site integrity pass:** removed everything that was an unverified/placeholder claim rather than confirmed fact — "Licensed & Insured" (hero badge, trust bar, why-us card), business hours ("Mon–Fri 7am–6pm"), and Trevor's Instagram/Facebook links (the Instagram URL was a guessed handle, the Facebook link was literally a search-results page, neither ever verified as his real profile). Nothing should be published as fact until confirmed.
 - Add a Partners / Links section:
   - **Brentwood Dirt Works** (owner: Trevor) ✅
     - Phone: 615-569-1679
-    - Instagram: @Brentwooddirtworks
-    - Facebook: Brentwood Dirt Works
+    - Instagram/Facebook handles known (@Brentwooddirtworks) but links removed from site — never verified as his actual profiles, re-add once confirmed
     - Services (from truck signage):
       - Commercial: Demolition, Excavation, Grading, Utilities
       - Residential: French Drains, Waterproofing, Sump Pumps, Grading, Land Clearing, Utilities, Hardscape, Landscape, Tree Removal, Stump Grinding
@@ -54,6 +54,9 @@
 - [x] Pricing — decided: no pricing published on site, free estimate only via quote form/call ✅
 - [ ] Photos of completed jobs (for before/after gallery)
 - [ ] Where he currently stores photos (Google Photos, phone camera roll, etc.)
+- [ ] Is the business actually licensed and insured? (was published as fact on the site, pulled since never confirmed — re-add if true)
+- [ ] Real business hours (site said Mon–Fri 7am–6pm, was never actually confirmed — pulled from site)
+- [ ] Confirm Trevor's Instagram (@Brentwooddirtworks) and Facebook page are actually his — links were guessed/unverified and removed
 
 ## Marketing — Social Shorts
 - **Format:** POV-style short videos (TikTok / Instagram Reels / YouTube Shorts)
