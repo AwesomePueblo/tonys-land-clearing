@@ -11,13 +11,11 @@
 - **Service area:** Middle Tennessee ✅ — focus on Brentwood and Franklin (affluent Nashville suburbs)
 
 ## Website
-- Standalone site separate from banquotas.com
-- Hosting: GitHub → Netlify (recommended over GitHub Pages for native form handling)
-- Replace booking calendar with a simple quote request form:
-  - Name
-  - Address (where work is needed)
-  - Phone / contact info
-  - Photo upload (of stump/tree/work area)
+- Standalone site separate from banquotas.com ✅ live at tonyslandclearing.com (DNS still propagating)
+- Hosting: GitHub → Netlify (recommended over GitHub Pages for native form handling) ✅
+- Booking calendar replaced with a quote request form ✅ (name, phone, address, service type, photo upload, notes) — Netlify Forms, no fixed pricing shown
+- **Pricing policy: no published pricing anywhere on the site** ✅ — Tony wants free estimate via the quote form (or a phone call) as the only path to a price, not published rate tables. Removed the pricing section, the FAQ's dollar-figure answer, and the chatbot's pricing figures accordingly.
+- Real logo received from Tony ("Tony's Land Clearing" version) and in use in the site header ✅
 - Add a Partners / Links section:
   - **Brentwood Dirt Works** (owner: Trevor) ✅
     - Phone: 615-569-1679
@@ -53,7 +51,7 @@
 - [x] Domain — tonyslandclearing.com purchased on GoDaddy ✅
 - [x] Phone number — 620-617-1838 ✅
 - [x] Service area — Middle Tennessee, focus Brentwood & Franklin ✅
-- [ ] Pricing confirmation ($95 small / $145 medium / $6 per inch large)
+- [x] Pricing — decided: no pricing published on site, free estimate only via quote form/call ✅
 - [ ] Photos of completed jobs (for before/after gallery)
 - [ ] Where he currently stores photos (Google Photos, phone camera roll, etc.)
 
