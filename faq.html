@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FAQ – Tony's Land Clearing</title>
   <meta name="description" content="Frequently asked questions about stump grinding and land clearing from Tony's Land Clearing, serving Brentwood, Franklin, and Middle Tennessee." />
+  <script>
+    (function () {
+      var t = localStorage.getItem('site-theme');
+      if (t && t !== 'green') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 
@@ -627,6 +633,13 @@
         <a href="tel:+16206171838">620-617-1838</a>
         <a href="index.html#quote">Get a Quote</a>
       </div>
+      <div class="theme-picker">
+        <span class="theme-picker-label">Theme:</span>
+        <button class="theme-swatch" data-theme-choice="green" style="--swatch:#2e7d32" aria-label="Green theme"></button>
+        <button class="theme-swatch" data-theme-choice="gold" style="--swatch:#b8860b" aria-label="Gold theme"></button>
+        <button class="theme-swatch" data-theme-choice="purple" style="--swatch:#6a1b9a" aria-label="Purple theme"></button>
+        <button class="theme-swatch" data-theme-choice="cerulean" style="--swatch:#007ba7" aria-label="Cerulean theme"></button>
+      </div>
       <div class="footer-copy">© <span id="footer-year"></span> Tony's Land Clearing · Brentwood &amp; Franklin, TN</div>
     </div>
   </footer>
@@ -662,5 +675,6 @@
   </script>
 
   <script src="chat-widget.js" defer></script>
+  <script src="theme-switcher.js" defer></script>
 </body>
 </html>

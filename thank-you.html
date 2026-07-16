@@ -4,6 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thank You – Tony's Land Clearing</title>
+  <script>
+    (function () {
+      var t = localStorage.getItem('site-theme');
+      if (t && t !== 'green') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 </head>
@@ -14,7 +20,6 @@
       <a href="index.html" class="site-logo"><img src="logo.png" alt="Tony's Land Clearing" class="site-logo-img" /></a>
       <nav class="site-nav">
         <a href="index.html#services">Services</a>
-        <a href="index.html#pricing">Pricing</a>
         <a href="index.html#quote">Get a Quote</a>
         <a href="index.html#partners">Partners</a>
         <a href="faq.html">FAQ</a>
@@ -43,6 +48,13 @@
         <a href="faq.html">FAQ</a>
         <a href="tel:+16206171838">620-617-1838</a>
       </div>
+      <div class="theme-picker">
+        <span class="theme-picker-label">Theme:</span>
+        <button class="theme-swatch" data-theme-choice="green" style="--swatch:#2e7d32" aria-label="Green theme"></button>
+        <button class="theme-swatch" data-theme-choice="gold" style="--swatch:#b8860b" aria-label="Gold theme"></button>
+        <button class="theme-swatch" data-theme-choice="purple" style="--swatch:#6a1b9a" aria-label="Purple theme"></button>
+        <button class="theme-swatch" data-theme-choice="cerulean" style="--swatch:#007ba7" aria-label="Cerulean theme"></button>
+      </div>
       <div class="footer-copy">© <span id="footer-year"></span> Tony's Land Clearing · Brentwood &amp; Franklin, TN</div>
     </div>
   </footer>
@@ -50,6 +62,7 @@
   <script>
     document.getElementById('footer-year').textContent = new Date().getFullYear();
   </script>
+  <script src="theme-switcher.js" defer></script>
 
 </body>
 </html>

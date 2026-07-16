@@ -35,6 +35,26 @@
   --transition: all 0.3s cubic-bezier(0.25, 0.6, 0.3, 1);
 }
 
+/* Alternate theme palettes — toggled via [data-theme] on <html> */
+:root[data-theme="gold"] {
+  --green: #b8860b;
+  --green-dark: #8a6508;
+  --green-light: #e0b23a;
+  --green-glow: rgba(184, 134, 11, 0.35);
+}
+:root[data-theme="purple"] {
+  --green: #6a1b9a;
+  --green-dark: #4a1170;
+  --green-light: #9c4dcc;
+  --green-glow: rgba(106, 27, 154, 0.35);
+}
+:root[data-theme="cerulean"] {
+  --green: #007ba7;
+  --green-dark: #005f7a;
+  --green-light: #2da8d8;
+  --green-glow: rgba(0, 123, 167, 0.35);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -596,6 +616,31 @@ a:hover {
 }
 .footer-links { display: flex; gap: 1.5rem; font-size: 0.88rem; }
 .footer-copy { color: var(--text-muted); font-size: 0.82rem; width: 100%; text-align: center; margin-top: 1rem; }
+
+.theme-picker {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.theme-picker-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+.theme-swatch {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid var(--border-color);
+  background: var(--swatch);
+  cursor: pointer;
+  padding: 0;
+  transition: var(--transition);
+}
+.theme-swatch:hover { transform: scale(1.12); }
+.theme-swatch.active {
+  border-color: var(--text-primary);
+  box-shadow: 0 0 0 2px var(--bg-primary), 0 0 0 4px var(--swatch);
+}
 
 /* Focus / scrollbar / selection */
 *:focus-visible { outline: 2px solid var(--green-light); outline-offset: 2px; border-radius: 4px; }
