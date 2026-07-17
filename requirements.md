@@ -52,8 +52,8 @@
 - [x] Phone number — 620-617-1838 ✅
 - [x] Service area — Middle Tennessee, focus Brentwood & Franklin ✅
 - [x] Pricing — decided: no pricing published on site, free estimate only via quote form/call ✅
-- [ ] Photos of completed jobs (for before/after gallery)
-- [ ] Where he currently stores photos (Google Photos, phone camera roll, etc.)
+- [x] Photos of completed jobs ✅ — Tony sent a real before/after pair (stump+root ball removed, area mulched) now live in a "Before & After" section, plus a stumps photo used as the feature-band background. Hero and one split-block image are still stock Unsplash photos pending more real photos.
+- [ ] More real job photos welcome — only have 3 so far, could use more variety (different jobs, wider angles, land clearing not just stump grinding)
 - [ ] Is the business actually licensed and insured? (was published as fact on the site, pulled since never confirmed — re-add if true)
 - [ ] Real business hours (site said Mon–Fri 7am–6pm, was never actually confirmed — pulled from site)
 - [ ] Confirm Trevor's Instagram (@Brentwooddirtworks) and Facebook page are actually his — links were guessed/unverified and removed
