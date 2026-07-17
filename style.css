@@ -480,7 +480,7 @@ a:hover {
   display: flex;
   align-items: flex-end;
   background: linear-gradient(180deg, rgba(11,15,20,0.1) 0%, rgba(11,15,20,0.92) 90%),
-    url('https://images.unsplash.com/photo-1470770903676-69b98201ea1c?w=1600&q=80') center/cover no-repeat;
+    url('images/stumps.jpg') center/cover no-repeat;
   border: 1px solid var(--border-color);
   padding: 2.5rem;
 }
@@ -494,21 +494,43 @@ a:hover {
 }
 .feature-band p { color: rgba(255,255,255,0.82); font-size: 1rem; margin: 0; }
 
-/* Gallery grid — two large images side by side */
-.gallery-grid {
+/* Before & after grid — two large images side by side */
+.before-after-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.25rem;
 }
 @media (max-width: 700px) {
-  .gallery-grid { grid-template-columns: 1fr; }
+  .before-after-grid { grid-template-columns: 1fr; }
 }
-.gallery-photo {
+.before-after-item {
+  position: relative;
   border-radius: var(--border-radius);
+  overflow: hidden;
   border: 1px solid var(--border-color);
-  aspect-ratio: 4/3;
+  aspect-ratio: 3/4;
+}
+.before-after-photo {
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
+}
+.before-after-label {
+  position: absolute;
+  top: 0.85rem;
+  left: 0.85rem;
+  background: rgba(11,15,20,0.75);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: var(--text-primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--glass-border);
 }
 
 /* Photo + text split */
